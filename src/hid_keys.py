@@ -1,0 +1,133 @@
+# ==========================================
+# Title:  hid_keys.py
+# Author: Eric Roth
+# Date:   March 14th, 2023
+# ==========================================
+
+# Python module with useful HID conversions.
+# NOTE: These mappings are for a US keyboard. Others might follow different conventions.
+
+hid_modifers = {
+    0x00: "",
+    0x01: "LCTRL",
+    0x02: "LSHIFT",
+    0x04: "LALT",
+    0x08: "LMETA",
+    0x10: "RCTRL",
+    0x20: "RSHIFT",
+    0x40: "RALT",
+    0x80: "RMETA"
+}
+
+# This is NOT an exhaustive list. Refer to https://gist.github.com/MightyPork/6da26e382a7ad91b5496ee55fdc73db2 for more key codes.
+hid_number_to_key = {
+    0x00: "",
+    0x04: "a",
+    0x05: "b",
+    0x06: "c",
+    0x07: "d",
+    0x08: "e",
+    0x09: "f",
+    0x0a: "g",
+    0x0b: "h",
+    0x0c: "i",
+    0x0d: "j",
+    0x0e: "k",
+    0x0f: "l",
+    0x10: "m",
+    0x11: "n",
+    0x12: "o",
+    0x13: "p",
+    0x14: "q",
+    0x15: "r",
+    0x16: "s",
+    0x17: "t",
+    0x18: "u",
+    0x19: "v",
+    0x1a: "w",
+    0x1b: "x",
+    0x1c: "y",
+    0x1d: "z",
+    0x1e: "1",
+    0x1f: "2",
+    0x20: "3",
+    0x21: "4",
+    0x22: "5",
+    0x23: "6",
+    0x24: "7",
+    0x25: "8",
+    0x26: "9",
+    0x27: "0",
+    0x28: "<ENTER>",
+    0x29: "<ESC>",
+    0x2a: "\b", # backspace
+    0x2b: "\t", # tab
+    0x2c: " ",  # space
+    0x2d: "-",  
+    0x2e: "=",  
+    0x2f: "[", 
+    0x30: "]",
+    0x31: "\\", # backslash
+    0x33: ";",
+    0x34: "\'",
+    0x35: "`",
+    0x36: ",",
+    0x37: ".",
+    0x38: "/",
+}
+
+# This is NOT an exhaustive list. Refer to https://gist.github.com/MightyPork/6da26e382a7ad91b5496ee55fdc73db2 for more key codes.
+hid_key_to_number = {
+    "" : 0x00,
+    "a": 0x04,
+    "b": 0x05,
+    "c": 0x06,
+    "d": 0x07,
+    "e": 0x08,
+    "f": 0x09,
+    "g": 0x0a,
+    "h": 0x0b,
+    "i": 0x0c,
+    "j": 0x0d,
+    "k": 0x0e,
+    "l": 0x0f,
+    "m": 0x10,
+    "n": 0x11,
+    "o": 0x12,
+    "p": 0x13,
+    "q": 0x14,
+    "r": 0x15,
+    "s": 0x16,
+    "t": 0x17,
+    "u": 0x18,
+    "v": 0x19,
+    "w": 0x1a,
+    "x": 0x1b,
+    "y": 0x1c,
+    "z": 0x1d,
+    "1": 0x1e,
+    "2": 0x1f,
+    "3": 0x20,
+    "4": 0x21,
+    "5": 0X22,
+    "6": 0x23,
+    "7": 0x24,
+    "8": 0x25,
+    "9": 0x26,
+    "0": 0x27,
+    "<ENTER>": 0x28,
+    "<ESC>":   0x29,
+    "\b":      0x2a,
+    "\t":      0x2b,
+    " ":       0x2c,
+    "-":       0x2d,
+    "=":       0x2e,
+    "[":       0x2f,
+    "]":       0x30,
+    "\\":      0x31,
+    ";":       0x33,
+    "\'":      0x34,
+    ",":       0x36,
+    ".":       0x37,
+    "/":       0x38
+}
