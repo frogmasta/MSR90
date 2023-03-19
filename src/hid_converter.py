@@ -37,7 +37,6 @@ def hid_shift_hold(characters: list) -> list:
                 new_characters += "#"
             case "4":
                 new_characters += "$"
-                continue
             case "5":
                 new_characters += "%"
             case "6":

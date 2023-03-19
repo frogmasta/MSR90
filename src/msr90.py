@@ -67,4 +67,3 @@ class MSR90:
                 break
         
         return output
-        

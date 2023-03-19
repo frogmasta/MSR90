@@ -13,7 +13,8 @@ from msr90 import MSR90
 def main():
     # Find the card reader
     reader = MSR90()
-    reader.find_device()
+    if not reader.find_device():
+        return
 
     # Read a single card from the user
     print("Please swipe a card (time limit 10s): ", end=None)
